@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'DancingScript-Regular' ;
+    src: url('font/DancingScript-Regular.ttf');
+}
+body {
+    text-decoration:none;
+    font-family: 'DancingSript-Regular';
+}
