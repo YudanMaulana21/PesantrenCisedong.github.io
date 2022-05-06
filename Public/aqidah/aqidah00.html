@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../img/logo cisedong.png" alt="" width="30" height="32">
+              </a>
+          <a class="navbar-brand" href="#">Darussalam Al-musri</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggl e navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto" id="listawal">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html ">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pendaftaran</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold text-success" href="#">Artikel</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Selengkapnya
+                </a>
+                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Latar Belakang</a></li>
+                  <li><a class="dropdown-item" href="#">Berita</a></li>
+                  <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
+                  <li><a class="dropdown-item" href="#">Hubungi</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Akhir Navbar-->
+    <p class="lead text-success mt-1 pt-1 ms-3 fw-normal fs-6">Artikel/Akidah/</p>
+      <div class="container">
+        <!--Judul-->
+      <p class="keterangan m-auto text-center fs-1 text-decoration-underline text-success mb-4">AKIDAH</p>
+    </div>
+    <div class="container">
+        <div class="row" id="pilihan">
+            <div class="col-9 pt-3 ps-sm-3 m-0 fs-3"><h5><i class="fa-solid fa-book-bookmark text-success me-1"></i><a href="Public/aqidah/aqidah01.html" class="text-decoration-none p-2 text-success">Jumlah Ayat beserta Huruf dalam Al-Qur'an..</a></h5></div>
+            <div class="col-9 pt-3 ps-sm-3 m-0 fs-3"><h5><i class="fa-solid fa-book-bookmark text-success me-1"></i><a href="Public/aqidah/aqidah01.html" class="text-decoration-none p-2 text-success">Aqo'idul iman beserta dalil <i> Naqli</i> dan <i>'Aqli</i></a></h5></div>
+            <div class="col-9 pt-3 ps-sm-3 m-0 fs-3"><h5><i class="fa-solid fa-book-bookmark text-success me-1"></i><a href="Public/aqidah/aqidah01.html" class="text-decoration-none p-2 text-success">Hukum mempelajari <i> Ilmu Tajwid</i></a></h5></div>
+        </div>
+    </div>
+
+
+      <!--Bilangan Page selanjutnya-->
+      <div class="container">
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-success">1</button>
+          <button type="button" class="btn btn-success">2</button>
+          <button type="button" class="btn btn-success">3</button>
+          <button type="button" class="btn btn-success">4</button>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--page loader-->
+<div class="loader-wrapper">
+    <div class="loader">
+  <img src="../../img/SVG my logo.svg" alt="">
+  </div><div class="loader-text"><h5 class="text"> Antosan sakedap...</h5></div>
+  </div>
+  <script>
+    $(window).on("load",function(){
+       $(".loader-wrapper").delay(2000).fadeOut("slow");
+    });
+    const pilihan = document.getElementsByClassName('.btn');
+    // pilihan.style.marginTop = '20px';
+  </script>
+  <!--akhir page loader-->
+</body>
+</html>

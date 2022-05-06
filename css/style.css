@@ -1,8 +1,79 @@
-@font-face {
-    font-family: 'DancingScript-Regular' ;
-    src: url('font/DancingScript-Regular.ttf');
+#listawal li a:hover {
+    background-color :#d4fdcf;
+    color :000;
 }
-body {
-    text-decoration:none;
-    font-family: 'DancingSript-Regular';
+#artikel {
+    padding : 20px;
+    text-decoration : none;
+    background-color:#d4fdcf;
+}
+
+.loader-wrapper {
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    top :0px;
+    left :0px;
+    background-color:#fff;
+    display :flex;
+    justify-content : center;
+    align-items :center;
+}
+.loader-text {
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    top :130px;
+    left :0px;
+    color:green;
+    background-color:transparent;
+    display :flex;
+    justify-content : center;
+    align-items :center;
+}
+.loader {
+    display : inline-block;
+    position : relative;
+    animation : loader 2s infinite ease;
+}
+.terbaru {
+    padding-top : 20px;
+    font-size : 20px;
+    color :  #5f6163;
+}
+.updated {
+    font-size : 13px;
+    color :  #5f6163;
+}
+#pilihan {
+    display : inline-block;
+}
+#pilihan a {
+    margin-right : 5px;
+}
+#pilihan a:nth-child(8) {
+    background-color : salmon;
+}
+#pilihan a:nth-child(7) {
+    background-color : #09615c;
+}
+#pilihan a:nth-child(9) {
+    background-color : #873209;
+}
+@media only and screen (max-width : 200px) {
+    #pilihan a:nth-child(1) {
+        margin-right : 5px;
+    }
+}
+@import "Bootstrap";
+@keyframes loader {
+    0% {
+        transform :rotate(0deg);
+    }
+    25% {
+        transform :rotate(180deg);
+    }
+    100% {
+        transform :rotate(360deg);
+    }
 }
